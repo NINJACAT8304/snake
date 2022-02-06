@@ -9,4 +9,4 @@ like in nokia
 
 
 # LANGUAGES
-Made on JS and some HTML
+Made on HTML and some JS

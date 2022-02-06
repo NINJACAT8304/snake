@@ -1,6 +1,6 @@
 # snake
 This is da snake game
-Yes
+
 
 
 

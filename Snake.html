@@ -210,11 +210,13 @@
       this.position = new Block(randomCol, randomRow);
       
       
-      for (var i = 0; i < occupiedBlocks.length; i++) {
-        if (this.position.equal(occupiedBlocks[i])) {
+      var index = occupiedBlocks.length - 1;
+      while ( index >= 0 ) {
+        if (this.position.equal(occupiedBlocks[index])) {
           this.move(occupiedBlocks);
           return;
         }
+        index--;
       }
     };
 

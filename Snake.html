@@ -12,7 +12,7 @@
 
     <script>
    
-    alert("Are you ready? if no go away ")
+    alert("Are you ready?")
     
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -31,7 +31,7 @@
 
     
     var drawBorder = function () {
-      ctx.fillStyle = "DarkGreen";
+      ctx.fillStyle = "Grey";
       ctx.fillRect(0, 0, width, blockSize);
       ctx.fillRect(0, height - blockSize, width, blockSize);
       ctx.fillRect(0, 0, blockSize, height);
@@ -54,8 +54,7 @@
       ctx.fillStyle = "Red";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      ctx.fillText("You lose", width / 2, height / 2);
-      alert("Score : " + score)
+      ctx.fillText("Game over. Your score : " + score, width / 2, height / 2);
     };
 
     

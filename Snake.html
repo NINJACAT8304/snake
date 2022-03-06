@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Snake!</title>
-    <body bgcolor = "Green">
+    <body bgcolor = "Pink">
     
     <h1>Snake!</h1>
     
@@ -31,7 +31,7 @@
 
     
     var drawBorder = function () {
-      ctx.fillStyle = "Grey";
+      ctx.fillStyle = "LightPurple";
       ctx.fillRect(0, 0, width, blockSize);
       ctx.fillRect(0, height - blockSize, width, blockSize);
       ctx.fillRect(0, 0, blockSize, height);
@@ -109,14 +109,14 @@
 
     
     Snake.prototype.draw = function () {
-      this.segments[0].drawSquare("LimeGreen");
+      this.segments[0].drawSquare("DarkPurple");
       var isEvenSegment = false;
 
       for (var i = 1; i < this.segments.length; i++) {
         if (isEvenSegment) {
-          this.segments[i].drawSquare("Black");
+          this.segments[i].drawSquare("Purple");
         } else {
-          this.segments[i].drawSquare("Red");
+          this.segments[i].drawSquare("DarkPink");
         }
 
         isEvenSegment = !isEvenSegment; 

@@ -54,7 +54,8 @@
       ctx.fillStyle = "Red";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      ctx.fillText("Game over. Your score : " + score, width / 2, height / 2);
+      ctx.fillText("Game over.");
+      alert("Your score : " + score, width / 2, height / 2)
     };
 
     
@@ -109,14 +110,14 @@
 
     
     Snake.prototype.draw = function () {
-      this.segments[0].drawSquare("DarkPurple");
+      this.segments[0].drawSquare("Green");
       var isEvenSegment = false;
 
       for (var i = 1; i < this.segments.length; i++) {
         if (isEvenSegment) {
-          this.segments[i].drawSquare("Purple");
+          this.segments[i].drawSquare("Red");
         } else {
-          this.segments[i].drawSquare("Pink");
+          this.segments[i].drawSquare("Black");
         }
 
         isEvenSegment = !isEvenSegment; 

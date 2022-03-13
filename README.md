@@ -12,3 +12,5 @@ like in nokia
 
 # LANGUAGES
 Made on HTML and some JS
+
+There will be no updates anymore
